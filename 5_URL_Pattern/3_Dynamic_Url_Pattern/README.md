@@ -120,63 +120,38 @@ Here, the URL `product/` will default to `id=1`, but `product/2/` will use `id=2
 
 ---
 
+Got it! Here's the concise explanation for **Passing Extra Options to View Functions**:
+
+---
+
 ## 4. **Passing Extra Options to View Functions**
 
-Django allows you to pass additional parameters to view functions in various ways, such as through query parameters or URL kwargs.
+You can pass additional arguments to view functions using the `kwargs` argument in `path()`.
 
-### Example: Passing Extra Options via URL Parameters
+### Example:
+
+#### **urls.py**
 
 ```python
-# urls.py
-
 from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('product/<int:id>/<str:category>/', views.product_category_detail, name='product_category_detail'),
+    path('', views.home, {'check': 'OK'}, name='home'),
 ]
 ```
 
-### Example: View Function with Extra Options
+#### **views.py**
 
 ```python
-# views.py
-
 from django.http import HttpResponse
 
-def product_category_detail(request, id, category):
-    return HttpResponse(f"Product ID: {id}, Category: {category}")
+def home(request, check):
+    print(check)  # Output: OK
+    return HttpResponse(f"Check value: {check}")
 ```
 
-Here, you can access a URL like `product/1/electronics/`, and the view will receive `id=1` and `category='electronics'`.
-
-### Example: Passing Extra Options via Query Parameters
-
-```python
-# urls.py
-
-from django.urls import path
-from . import views
-
-urlpatterns = [
-    path('search/', views.search_products, name='search_products'),
-]
-```
-
-### Example: View Function with Query Parameters
-
-```python
-# views.py
-
-from django.http import HttpResponse
-
-def search_products(request):
-    query = request.GET.get('q', '')  # Retrieve query parameter 'q'
-    return HttpResponse(f"Search results for: {query}")
-```
-
-You can call the URL like `search/?q=laptop` and the `query` parameter will be passed to the view.
-
+- The `kwargs` argument passes extra data (`check='OK'`) to the `home` view.
 ---
 
 ## 5. **Custom Path Converters**
