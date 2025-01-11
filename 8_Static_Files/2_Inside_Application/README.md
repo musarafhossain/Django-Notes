@@ -3,11 +3,11 @@
 Follow these steps to add static files in your Django application.
 
 ## Step 1: Create `static` Folder Inside Your Application
-Navigate to your Django application folder (e.g., `main`) and create a folder named `static`.
+Navigate to your Django application folder (e.g., `home`) and create a folder named `static`.
 
 ### Example Structure
 ```
-main/
+home/
 ├── static/
 │   ├── css/
 │   ├── js/
@@ -41,9 +41,9 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 ## Step 3: Create Static Files (CSS, JS, Images)
 Add your static files inside the appropriate directories under the `static` folder in your app.
 
-- CSS: `main/static/css/style.css`
-- JS: `main/static/js/script.js`
-- Images: `main/static/images/logo.png`
+- CSS: `home/static/css/style.css`
+- JS: `home/static/js/script.js`
+- Images: `home/static/images/logo.png`
 
 ---
 
