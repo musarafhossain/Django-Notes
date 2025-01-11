@@ -49,4 +49,3 @@ temp.html
 ---
 
 This approach allows you to pass dynamic data from your views to your templates, making it possible to display custom content based on user input, database records, or any other dynamic source.
-```
