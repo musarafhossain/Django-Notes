@@ -1,53 +1,49 @@
-Here’s the explanation for adding **static files inside the project** in Markdown format:
+# Adding Static Files Inside Application in Django
 
-```markdown
-# Adding Static Files Inside the Project in Django
+Follow these steps to add static files in your Django application.
 
-Follow these steps to add static files at the **project level** in Django.
-
----
-
-## Step 1: Create `static` Folder Inside Your Project
-- Navigate to your project directory (the one containing `settings.py`) and create a folder named `static`.
+## Step 1: Create `static` Folder Inside Your Application
+Navigate to your Django application folder (e.g., `main`) and create a folder named `static`.
 
 ### Example Structure
 ```
-myproject/
+main/
 ├── static/
 │   ├── css/
 │   ├── js/
 │   └── images/
-├── myapp/
-├── manage.py
-└── settings.py
+├── templates/
+└── views.py
 ```
 
 ---
 
 ## Step 2: Add Static Directory Inside `settings.py`
-Modify your `settings.py` file to configure static file settings.
+Modify your `settings.py` file to configure static files. 
 
 ```python
 # settings.py
 
+# Path for global static files (optional)
+STATICFILES_DIRS = [BASE_DIR / 'static']
+
 # URL to serve static files
 STATIC_URL = 'static/'
 
-# Directory for global static files
-STATICFILES_DIRS = [BASE_DIR / 'static']
-
-# Directory to collect static files for deployment
+# Directory to collect all static files during deployment
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 ```
+
+> **Note:** Django automatically looks for static files in `static` folders inside each app, so you don’t need to add app-level static directories to `STATICFILES_DIRS`.
 
 ---
 
 ## Step 3: Create Static Files (CSS, JS, Images)
-Add your static files inside the appropriate directories under the `static` folder.
+Add your static files inside the appropriate directories under the `static` folder in your app.
 
-- CSS: `static/css/style.css`
-- JS: `static/js/script.js`
-- Images: `static/images/logo.png`
+- CSS: `main/static/css/style.css`
+- JS: `main/static/js/script.js`
+- Images: `main/static/images/logo.png`
 
 ---
 
@@ -107,5 +103,5 @@ staticfiles/
 
 ---
 
-This setup ensures your static files are accessible globally across your project during development and production.
+This setup ensures that your static files are correctly organized and accessible both during development and in production.
 ```

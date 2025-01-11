@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
 </head>
 <body>
     <h1>This is home page.</h1>
-    <p>{% static 'css/style.css' %}</p>
-    <p>{% static 'images/logo.png' %}</p>
+    <p>{% static 'home/css/style.css' %}</p>
+    <p>{% static 'home/images/logo.png' %}</p>
     <p>{% get_static_prefix %}</p>
-    <img src="{% static 'images/logo.png' %}" alt="Logo">
+    <img src="{% static 'home/images/logo.png' %}" alt="Logo">
     <button type="button" onclick="sayHello('Hello World!')">SayHello</button>
-    <script src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'home/js/script.js' %}"></script>
 </body>
 </html>
