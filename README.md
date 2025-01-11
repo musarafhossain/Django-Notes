@@ -11,6 +11,7 @@
 5. **URL Pattern** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/5_URL_Pattern)
     1. **Inside Project** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/5_URL_Pattern/1_Inside_Project)
     2. **Inside Application** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/5_URL_Pattern/2_Inside_Application)
+    3. **Dynamic Url Pattern** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/5_URL_Pattern/3_Dynamic_Url_Pattern)
 ---
 6. **Template** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/6_Template)
     1. **Inside Project** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/6_Template/1_Inside_Project)
@@ -25,3 +26,7 @@
     1. **Inside Project** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/8_Static_Files/1_Inside_Project)
     2. **Inside Applicatiion** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/8_Static_Files/2_Inside_Application)
 ---
+9. **Models** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/9_Models)
+---
+10. **Admin Application** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/10_Admin_Application)
+
