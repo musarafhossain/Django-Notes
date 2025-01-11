@@ -135,42 +135,6 @@ class ExtendedBookForm(BaseBookForm):
 ```
 
 ---
-### **Django Model Forms with `exclude`**
-
-The `exclude` attribute in a ModelForm’s `Meta` class is used to specify fields that should not be included in the form.
-
----
-
-### 7. **Example with `exclude`**
-
-```python
-# forms.py
-from django import forms
-from .models import Book
-
-class BookForm(forms.ModelForm):
-    class Meta:
-        model = Book
-        exclude = ['isbn']  # Exclude the ISBN field from the form
-        labels = {
-            'title': 'Book Title',
-        }
-        help_texts = {
-            'description': 'Provide a brief description of the book.',
-        }
-        widgets = {
-            'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter book title'}),
-            'description': forms.Textarea(attrs={'class': 'form-control', 'rows': 5}),
-        }
-```
-
-#### **Key Notes**:
-1. **Fields Excluded**: In the above example, the `isbn` field will not be displayed in the form.
-2. **Why Use `exclude`**: 
-   - When a field is sensitive or managed elsewhere (e.g., auto-generated fields like timestamps).
-   - To keep the form concise and relevant to the user.
-
----
 
 ### Complete Example: ModelForm
 
