@@ -6,7 +6,7 @@ Follow these steps to create a view in your Django application.
 1. Go to `[projectname/applicationname/views.py]`
 
 ### Example of views.py
-```
+```python
 views.py
 -------------------------------------------------------------------------
 | ...                                                                   |

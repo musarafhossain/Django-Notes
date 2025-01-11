@@ -16,7 +16,7 @@ To install the application, follow these steps:
 2. Add the application name in `INSTALLED_APPS`
 
 ### Example of settings.py
-```
+```python
 settings.py
 -------------------------------------------------------------------------
 | ...                                                                   |
