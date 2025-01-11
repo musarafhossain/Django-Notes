@@ -1,6 +1,3 @@
-Here’s the explanation for adding **static files inside the project** in Markdown format:
-
-```markdown
 # Adding Static Files Inside the Project in Django
 
 Follow these steps to add static files at the **project level** in Django.
