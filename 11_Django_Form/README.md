@@ -35,27 +35,88 @@ You can display forms in templates using `{% csrf_token %}` for security and `{{
 - `{{ form.as_ul }}`: Renders the form fields as a list.
 
 ---
-
 ### 4. **ID Attribute**
-- Each form field is rendered with an `id` attribute for easier styling and accessibility.
+The `id` attribute can be set using the `attrs` argument inside the `widget`.
 
 #### Example:
+```python
+from django import forms
+
+class ExampleForm(forms.Form):
+    name = forms.CharField(
+        widget=forms.TextInput(attrs={'id': 'custom-id'}),
+        required=True
+    )
+```
+
+#### **Generated HTML:**
 ```html
-<input type="text" name="name" id="id_name">
+<input type="text" name="name" id="custom-id" required>
 ```
 
 ---
 
 ### 5. **Label Tag**
-Labels can be added automatically or customized via the `label` argument in the field.
+The `label` argument allows you to specify a custom label for the form field. If not provided, Django uses the field name as the label.
 
 #### Example:
+```python
+class ExampleForm(forms.Form):
+    name = forms.CharField(
+        label="Your Full Name",
+        widget=forms.TextInput(attrs={'id': 'custom-id'})
+    )
+```
+
+#### **Generated HTML:**
 ```html
-<label for="id_name">Your Name</label>
+<label for="custom-id">Your Full Name</label>
+<input type="text" name="name" id="custom-id">
 ```
 
 ---
 
+### **. Combining `id` and `label` Arguments**
+You can define both the `id` and the `label` together for complete customization.
+
+#### Example:
+```python
+class ExampleForm(forms.Form):
+    email = forms.EmailField(
+        label="Email Address",
+        widget=forms.EmailInput(attrs={'id': 'email-input'}),
+        required=True
+    )
+```
+
+#### **Generated HTML:**
+```html
+<label for="email-input">Email Address</label>
+<input type="email" name="email" id="email-input" required>
+```
+
+---
+
+### **Dynamic Label Suffix**
+You can control the suffix appended to labels using `label_suffix` in the field argument.
+
+#### Example:
+```python
+class ExampleForm(forms.Form):
+    phone = forms.CharField(
+        label="Phone Number",
+        label_suffix=":",
+        widget=forms.TextInput(attrs={'id': 'phone-id'})
+    )
+```
+
+#### **Generated HTML:**
+```html
+<label for="phone-id">Phone Number:</label>
+<input type="text" name="phone" id="phone-id">
+```
+
+--- 
 ### 6. **Initial Values**
 Set initial values for form fields using the `initial` argument.
 
