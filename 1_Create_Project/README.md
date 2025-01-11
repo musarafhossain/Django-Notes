@@ -1,6 +1,3 @@
-Certainly! Below is the provided information converted into Markdown format.
-
-```markdown
 # Setting Up a Django Project
 
 Follow these steps to set up a Django project using Python and a virtual environment.
