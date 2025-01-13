@@ -30,13 +30,13 @@
 ---
 10. **Admin Application** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/10_Admin_Application)
 ---
-11. **Admin Application** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/11_Django_Form)
+11. **Django Form** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/11_Django_Form)
 ---
-12. **Admin Application** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/12_Model_Form)
+12. **Model Form** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/12_Model_Form)
 ---
-13. **Admin Application** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/13_Message_Framework)
+13. **Message Framework** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/13_Message_Framework)
 ---
-14. **Admin Application** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/14_User_Authentication)
+14. **User Authentication** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/14_User_Authentication)
 ---
 15. **Admin Application** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/15_Cookies)
 ---
