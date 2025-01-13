@@ -37,4 +37,7 @@
 13. **Admin Application** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/13_Message_Framework)
 ---
 14. **Admin Application** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/14_User_Authentication)
-
+---
+15. **Admin Application** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/15_Cookies)
+---
+16. **Admin Application** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/16_Session)
