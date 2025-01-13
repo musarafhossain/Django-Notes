@@ -38,6 +38,6 @@
 ---
 14. **User Authentication** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/14_User_Authentication)
 ---
-15. **Admin Application** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/15_Cookies)
+15. **Cookies** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/15_Cookies)
 ---
-16. **Admin Application** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/16_Session)
+16. **Session** -> [Link](https://github.com/musarafhossain/Django-Practical/tree/main/16_Session)
